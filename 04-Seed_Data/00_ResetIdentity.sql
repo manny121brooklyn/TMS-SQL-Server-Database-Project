@@ -1,0 +1,8 @@
+
+
+DBCC CHECKIDENT ('LeasingCompanies', RESEED, 0);
+DBCC CHECKIDENT ('Customers', RESEED, 0);
+DBCC CHECKIDENT ('Employees', RESEED, 0);
+DBCC CHECKIDENT ('Trucks', RESEED, 0);
+DBCC CHECKIDENT ('Trailers', RESEED, 0);
+GO
