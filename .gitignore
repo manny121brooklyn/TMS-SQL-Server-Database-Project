@@ -1,0 +1,17 @@
+# SQL Server database files
+*.mdf
+*.ldf
+*.bak
+
+# SSMS temporary files
+*.sqlproj.user
+
+# Visual Studio files
+.vs/
+
+# Windows files
+Thumbs.db
+desktop.ini
+
+# Personal files
+*.log
