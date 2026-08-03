@@ -64,3 +64,33 @@ GROUP BY
     i.TotalAmount
 HAVING SUM(p.Amount) > i.TotalAmount;
 GO
+
+--Find the bad CustomerIDs
+
+SELECT DISTINCT s.CustomerID
+FROM Shipments s
+LEFT JOIN Customers c
+    ON s.CustomerID = c.CustomerID
+WHERE c.CustomerID IS NULL;
+
+
+--Check how many bad rows 
+SELECT COUNT(*) AS MissingCustomers
+FROM Shipments s
+LEFT JOIN Customers c
+    ON s.CustomerID = c.CustomerID
+WHERE c.CustomerID IS NULL;
+
+--Check current Customers IDs
+
+
+SELECT MIN(CustomerID) AS MinID,
+       MAX(CustomerID) AS MaxID,
+       COUNT(*) AS TotalCustomers
+FROM Customers;
+
+--Check existing customer data
+
+SELECT *
+FROM Customers
+ORDER BY CustomerID;

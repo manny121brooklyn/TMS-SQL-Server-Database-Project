@@ -168,3 +168,8 @@ FROM Payments p
 JOIN Invoices i
 ON p.InvoiceID=i.InvoiceID
 WHERE p.Amount > i.TotalAmount;
+
+--Verify customers
+SELECT CustomerID, CompanyName
+FROM Customers
+ORDER BY CustomerID;

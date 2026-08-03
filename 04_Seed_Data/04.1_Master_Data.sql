@@ -109,6 +109,76 @@ VALUES
 ('Rapid Construction Supply', 'Paul Walker', '(602) 555-1015', 'pwalker@rapidbuild.com', '77 Builder Ave', 'Phoenix', 'AZ', '85001', 'Construction', 50000, 'Net 30', 'Active', '86-1515151');
 GO
 
+-- Add missing customers required by Shipments FK relationship
+
+INSERT INTO Customers
+(
+    CompanyName,
+    ContactName,
+    Phone,
+    Email,
+    Address,
+    City,
+    State,
+    ZipCode,
+    CustomerType,
+    CreditLimit,
+    PaymentTerms,
+    Status,
+    TaxID
+)
+VALUES
+('Blue Horizon Logistics', 'Michael Carter', '555-0101', 'michael@bluehorizon.com', '125 Market Street', 'Dallas', 'TX', '75201', 'Broker', 50000.00, 'Net 30', 'Active', 'TX-100023'),
+('Evergreen Distribution', 'Sarah Wilson', '555-0102', 'sarah@evergreen.com', '340 Oak Avenue', 'Seattle', 'WA', '98101', 'Direct', 75000.00, 'Net 45', 'Active', 'WA-100024'),
+('North Star Freight', 'David Miller', '555-0103', 'david@northstar.com', '890 Lake Road', 'Chicago', 'IL', '60601', 'Broker', 60000.00, 'Net 30', 'Active', 'IL-100025'),
+('Golden Route Supply', 'Emma Johnson', '555-0104', 'emma@goldenroute.com', '45 Industrial Blvd', 'Atlanta', 'GA', '30301', 'Direct', 40000.00, 'Net 30', 'Active', 'GA-100026'),
+('Pacific Cargo Solutions', 'James Brown', '555-0105', 'james@pacificcargo.com', '700 Harbor Drive', 'Los Angeles', 'CA', '90001', 'Broker', 90000.00, 'Net 45', 'Active', 'CA-100027'),
+('Summit Wholesale', 'Robert Davis', '555-0106', 'robert@summit.com', '230 Summit Ave', 'Denver', 'CO', '80202', 'Direct', 35000.00, 'Net 30', 'Active', 'CO-100028'),
+('Metro Retail Partners', 'Linda Smith', '555-0107', 'linda@metroretail.com', '100 Main Street', 'New York', 'NY', '10001', 'Direct', 80000.00, 'Net 30', 'Active', 'NY-100029'),
+('Rapid Transit Group', 'William Taylor', '555-0108', 'william@rapidtransit.com', '550 Transit Road', 'Phoenix', 'AZ', '85001', 'Broker', 45000.00, 'Net 30', 'Active', 'AZ-100030'),
+('East Coast Imports', 'Patricia Anderson', '555-0109', 'patricia@eastcoast.com', '90 Port Avenue', 'Boston', 'MA', '02108', 'Direct', 70000.00, 'Net 45', 'Active', 'MA-100031'),
+('Midwest Cargo Inc', 'Thomas Thomas', '555-0110', 'thomas@midwestcargo.com', '300 River Road', 'St Louis', 'MO', '63101', 'Broker', 55000.00, 'Net 30', 'Active', 'MO-100032');
+
+
+-- Add missing customers required by Shipments FK relationship
+
+INSERT INTO Customers
+(
+    CompanyName,
+    ContactName,
+    Phone,
+    Email,
+    Address,
+    City,
+    State,
+    ZipCode,
+    CustomerType,
+    CreditLimit,
+    PaymentTerms,
+    Status,
+    TaxID
+)
+VALUES
+('Red Horizon Logistics', 'Michael Carter', '555-2573', 'mike@bluehorizon.com', '125 High Street', 'Houston', 'TX', '75201', 'Broker', 60000.00, 'Net 30', 'Active', 'TX-100053'),
+('Everhigh Marketing', 'Sarah Wilson', '555-1973', 'jonah@evergreen.com', '124 Oak Avenue', 'Seattle', 'WA', '98100', 'Direct', 45000.00, 'Net 45', 'Active', 'WA-100023'),
+('Polar Star Distribution', 'David Miller', '555-7568', 'cohen@northstar.com', '569 Lake Road', 'Chicago', 'IL', '60600', 'Broker', 80000.00, 'Net 30', 'Active', 'IL-100029'),
+('Golden Ox Supply', 'Emma Johnson', '555-1596', 'andy@goldenroute.com', '45 Industrial Blvd', 'Atlanta', 'GA', '11214', 'Direct', 30000.00, 'Net 30', 'Active', 'GA-102026'),
+('Atlantic Cargo Solutions', 'James Brown', '555-78336', 'john@pacificcargo.com', '471 Lincoln Drive', 'Los Angeles', 'CA', '90001', 'Broker', 95000.00, 'Net 30', 'Active', 'CA-108027'),
+('Summit Retail and Wholesale Group', 'Robert Davis', '555-8914', 'richard@summit.com', '230 18th Ave', 'Denver', 'CO', '80202', 'Direct', 45000.00, 'Net 45', 'Active', 'CO-100628'),
+('Conrad Retail Partners', 'Linda Smith', '555-2356', 'michael@metroretail.com', '120 Main Street', 'New York', 'NY', '10001', 'Direct', 75000.00, 'Net 30', 'Active', 'NY-100029'),
+('Rapid Transit Distribution', 'William Taylor', '555-9514', 'bill@rapidtransit.com', '236 Transit Road', 'Phoenix', 'AZ', '85001', 'Broker', 50000.00, 'Net 45', 'Active', 'AZ-100031'),
+('EastWest Coast Imports-Exports', 'Patricia Anderson', '555-0147', 'patricia@eastcoast.com', '50 Pacific Avenue', 'Boston', 'MA', '02108', 'Direct', 65000.00, 'Net 45', 'Active', 'MA-100032'),
+('Arizona Cargo Inc', 'Thomas Thomas', '555-4589', 'tiger@midwestcargo.com', '301 River Road', 'St Louis', 'MO', '63101', 'Broker', 60000.00, 'Net 30', 'Active', 'MO-100032'), 
+('Pacific Coast Imports', 'Patricia Anderson', '555-3698', 'briana@eastcoast.com', '91 Central Avenue', 'Boston', 'MA', '02108', 'Direct', 75000.00, 'Net 45', 'Active', 'MA-100051'),
+('Summit Cargo Inc', 'Thomas Thomas', '555-1245', 'latifa@midwestcargo.com', '321 Stream Road', 'St Louis', 'MO', '63101', 'Broker', 60000.00, 'Net 30', 'Active', 'MO-100092');
+
+
+
+
+
+
+
+
 
 -- =============================================
 -- Employees Seed Data
