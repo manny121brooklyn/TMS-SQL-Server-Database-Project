@@ -116,17 +116,17 @@ A SQL Server database project designed for a logistics and transportation compan
 
 
 
-02\_Tables  
+02\_Tables
 
-03\_Constraints  
+03\_Constraints
 
-04-Seed\_Data  
+04-Seed\_Data
 
-05\_Triggers  
+05\_Triggers
 
-06\_Modifications  
+06\_Modifications
 
-07\_Testing  
+07\_Testing
 
 
 
@@ -145,4 +145,18 @@ Included validation scripts to check:
 \- Constraint violations
 
 \- Business rules
+
+
+
+\## Database ERD
+
+
+
+The Entity Relationship Diagram (ERD) shows the structure and relationships
+
+between the TMS database tables.
+
+
+
+\[View TMS ERD PDF](Documentation/TMS\_ERD.pdf)
 
